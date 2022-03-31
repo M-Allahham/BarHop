@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "174830842722",
+    "project_id": "barhop-26da1",
+    "storage_bucket": "barhop-26da1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174830842722:android:7abc13593239dee9d7f23b",
+        "android_client_info": {
+          "package_name": "com.barhop.barhop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174830842722-8h5f50m9nge1q6i63b8bsktiqpe8u61o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfdmARs7Hu1pGI0durIUkr7ymX8fUQZ5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174830842722-8h5f50m9nge1q6i63b8bsktiqpe8u61o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
