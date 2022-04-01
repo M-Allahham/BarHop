@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
@@ -25,7 +24,7 @@ Future<String> redeemDrink() async {
 
 Future<bool> checkDrink() async {
   String url =
-      'Google cloud function check drink URL' +
+      'https://us-central1-barhop-26da1.cloudfunctions.net/checkDrinks?uid=' +
           FirebaseAuth.instance.currentUser!.uid.toString();
   final response = await http.get(Uri.parse(url));
   var responseData = json.decode(response.body).toString();

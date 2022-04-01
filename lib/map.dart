@@ -1,7 +1,5 @@
 import 'dart:math';
-
 import 'package:custom_info_window/custom_info_window.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
@@ -178,13 +176,13 @@ class _MapState extends State<GMap> {
                                       p.photoURL,
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.29,
+                                              0.25,
                                     ),
                                   ]),
                             ]),
                           ),
                           width: MediaQuery.of(context).size.width,
-                          height: MediaQuery.of(context).size.height / 2,
+                          height: MediaQuery.of(context).size.height * 0.4,
                         ),
                       ),
                     ],
@@ -220,17 +218,12 @@ class _MapState extends State<GMap> {
                   target: _initialcameraposition, zoom: 10, tilt: 30),
               onMapCreated: _onMapCreated,
               markers: _markers),
-          Stack(children: <Widget>[
-            Positioned(
-                left: 0,
-                top: MediaQuery.of(context).size.height * 0.45,
-                child: CustomInfoWindow(
-                  controller: _customInfoWindowController,
-                  height: MediaQuery.of(context).size.height * 0.45,
-                  width: MediaQuery.of(context).size.width,
-                  offset: 20,
-                )),
-          ]),
+          CustomInfoWindow(
+            controller: _customInfoWindowController,
+            height: MediaQuery.of(context).size.height * 0.4,
+            width: MediaQuery.of(context).size.width * 0.95,
+            offset: 20,
+          ),
         ]));
   }
 }

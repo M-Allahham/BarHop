@@ -1,7 +1,6 @@
 import 'package:barhop/auth_services.dart';
 import 'package:barhop/logged_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Social extends StatelessWidget {

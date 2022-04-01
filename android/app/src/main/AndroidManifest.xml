@@ -2,11 +2,13 @@
     package="com.barhop.barhop">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-   <application
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application
         android:label="BarHop"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="Google maps API Key"/>
+               android:value="Google Maps API Key"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

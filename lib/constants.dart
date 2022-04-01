@@ -1,5 +1,5 @@
 const apiKey =
-    'insert Stripe API key here';
+    'Stripe API Key';
 
 Map locations = {
   'TWKY': 'Twokeys',

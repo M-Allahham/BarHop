@@ -2,7 +2,6 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Places extends StatefulWidget {
@@ -16,7 +15,7 @@ class DataFromAPIStatePlaces extends State<Places> {
   DataFromAPIStatePlaces();
 
   String yelpAPIKey =
-      "Yelp API Key here!";
+      "Yelp API Key";
 
   List<Place> places = [];
 
@@ -65,13 +64,15 @@ class DataFromAPIStatePlaces extends State<Places> {
     try {
       for (int i = 0; i < places.length; i++) {
         responseYelp = await http.get(
-            Uri.http(
+            Uri.https(
                 'api.yelp.com', 'v3/businesses/' + places[i].biz.toString()),
             headers: {HttpHeaders.authorizationHeader: yelpAPIKey});
 
         if (response.statusCode == 200) {
         } else {}
         jsonDataYelp = jsonDecode(responseYelp.body);
+
+        print(jsonDataYelp);
 
         String start = "is_open_now: "; //first thing to look for
         String end = "}], transactions:"; //Last thing to look for
