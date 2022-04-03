@@ -10,8 +10,6 @@ An application intended to offer advertising for local bars in college towns in 
 - Stripe
 - Flutter
 
-## Example usage
-
 ## Future work
 
 I would like to try partnering with bars to see this application really come to life. I would also like to improve the appearance of the app with time as well as update all the SDKs in order to fix security vulnerabilites.  
