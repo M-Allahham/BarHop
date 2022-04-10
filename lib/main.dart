@@ -1,4 +1,7 @@
 //@dart=2.9
+// ignore_for_file: use_function_type_syntax_for_parameters
+
+import 'package:barhop/loadingScreen.dart';
 import 'package:barhop/map.dart';
 import 'package:barhop/places.dart';
 import 'package:barhop/deals.dart';
@@ -59,7 +62,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: whiteColor,
       ),
-      home: const MyHomePage(title: 'BarHop'),
+      home: const LoadingScreen(), //const MyHomePage(title: 'BarHop'),
       routes: {
         '/success': (_) => const MyHomePage(),
       },
@@ -75,9 +78,10 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+int _selectedIndex = 0;
+
 class _MyHomePageState extends State<MyHomePage> {
   MaterialColor whiteColor = MaterialColor(0xFFFFFFFF, colorCodes);
-  int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
     setState(() {
@@ -88,43 +92,46 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.map_outlined,
-            ),
-            label: "Map",
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-              ),
-              label: "Places"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.file_copy_outlined,
-              ),
-              label: "Deals"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person,
-              ),
-              label: "Social"),
-        ],
-        currentIndex: _selectedIndex,
-        backgroundColor: Colors.grey.shade900,
-        selectedItemColor: Colors.yellow.withOpacity(0.65),
-        unselectedItemColor: Colors.white,
-        type: BottomNavigationBarType.fixed,
-        onTap: _onItemTapped,
-      ),
+      bottomNavigationBar: _selectedIndex < 4
+          ? BottomNavigationBar(
+              items: const [
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.map_outlined,
+                  ),
+                  label: "Map",
+                ),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.home,
+                    ),
+                    label: "Places"),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.file_copy_outlined,
+                    ),
+                    label: "Deals"),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.person,
+                    ),
+                    label: "Social"),
+              ],
+              currentIndex: _selectedIndex.clamp(0, 3),
+              backgroundColor: Colors.grey.shade900,
+              selectedItemColor: Colors.yellow.withOpacity(0.65),
+              unselectedItemColor: Colors.white,
+              type: BottomNavigationBarType.fixed,
+              onTap: _onItemTapped,
+            )
+          : Container(
+              color: Colors.white, width: MediaQuery.of(context).size.width),
       body: IndexedStack(
         children: <Widget>[
           GMap(),
           const Places(),
           const Deals(),
-          const Social(),
+          const Social()
         ],
         index: _selectedIndex,
       ),
