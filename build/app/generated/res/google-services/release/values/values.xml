@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">174830842722-8h5f50m9nge1q6i63b8bsktiqpe8u61o.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">174830842722</string>
+    <string name="google_api_key" translatable="false">AIzaSyCfdmARs7Hu1pGI0durIUkr7ymX8fUQZ5E</string>
+    <string name="google_app_id" translatable="false">1:174830842722:android:7abc13593239dee9d7f23b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCfdmARs7Hu1pGI0durIUkr7ymX8fUQZ5E</string>
+    <string name="google_storage_bucket" translatable="false">barhop-26da1.appspot.com</string>
+    <string name="project_id" translatable="false">barhop-26da1</string>
+</resources>

@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@stripe/stripe-js": "^1.16.0",
-    "firebase-admin": "^10.0.2",
-    "stripe": "^8.168.0",
-    "url-parse": "^1.5.10"
-  }
-}

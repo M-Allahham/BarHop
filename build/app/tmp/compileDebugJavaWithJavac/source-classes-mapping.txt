@@ -1,0 +1,4 @@
+com/barhop/barhop/BuildConfig.java
+ com.barhop.barhop.BuildConfig
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant

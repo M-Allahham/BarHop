@@ -1,0 +1,14 @@
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/assets/map_style.json
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/assets/stink.jpg
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/assets/twokeys.jpg
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf
+C:/Users/malik/Desktop/barhop/barhop/build/windows/runner/Debug/data/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf

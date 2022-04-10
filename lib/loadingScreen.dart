@@ -18,7 +18,7 @@ class LoadingScreenState extends State<LoadingScreen> {
   Widget build(BuildContext context) {
     return FutureBuilder(
       future: Future.delayed(
-        const Duration(seconds: 20),
+        const Duration(seconds: 5),
         () {
           Navigator.pushAndRemoveUntil(
             context,

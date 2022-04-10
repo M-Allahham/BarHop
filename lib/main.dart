@@ -78,7 +78,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-int _selectedIndex = 0;
+int _selectedIndex = 1;
 
 class _MyHomePageState extends State<MyHomePage> {
   MaterialColor whiteColor = MaterialColor(0xFFFFFFFF, colorCodes);

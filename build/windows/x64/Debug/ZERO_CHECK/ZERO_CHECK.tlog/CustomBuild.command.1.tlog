@@ -1,0 +1,10 @@
+^C:\USERS\MALIK\DESKTOP\BARHOP\BARHOP\BUILD\WINDOWS\CMAKEFILES\4DDD2E0AE3BEB4EC736125A75F785D3F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/malik/Desktop/barhop/barhop/Windows -BC:/Users/malik/Desktop/barhop/barhop/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/malik/Desktop/barhop/barhop/build/windows/barhop.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
